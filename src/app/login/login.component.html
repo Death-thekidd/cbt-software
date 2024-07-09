@@ -1,0 +1,63 @@
+<div class="hero-section">
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit()" class="form">
+    <img src="/assets/img/logo1.png" alt="" />
+    <h2>Login</h2>
+
+    <div>
+      <label for="emailAddress">Email</label>
+      <input
+        type="email"
+        name=""
+        id="emailAddress"
+        placeholder="username@gmail.com"
+        formControlName="email"
+      />
+      <small
+        *ngIf="
+        myForm.get('email')?.errors &&
+        myForm.get('email')?.errors?.['required'] &&
+        myForm.get('email')?.touched
+      "
+        >Email Address is required</small
+      >
+      <small
+        *ngIf="
+        myForm.get('email')?.errors &&
+        myForm.get('email')?.errors?.['email'] &&
+        myForm.get('email')?.touched
+      "
+        >Email Address should be valid</small
+      >
+    </div>
+
+    <div>
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name=""
+        id="password"
+        placeholder="Password"
+        formControlName="password"
+      />
+      <small
+        *ngIf="
+        myForm.get('password')?.errors &&
+        myForm.get('password')?.errors?.['required'] &&
+        myForm.get('password')?.touched
+      "
+        >Password is required</small
+      >
+    </div>
+
+    <button
+      type="submit"
+      [disabled]="!myForm.valid"
+      class="btn btn-success submit"
+    >
+      Submit
+    </button>
+  </form>
+  <div class="main-img">
+    <img src="/assets/img/mainimg.png" alt="" />
+  </div>
+</div>

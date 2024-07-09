@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Gilroy-ExtraBold";
+  src: url("assets/Gilroy-font-free/Gilroy-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("assets/Gilroy-font-free/Gilroy-Light.ttf");
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("assets/Quicksand/static/Quicksand-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
