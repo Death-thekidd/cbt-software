@@ -56,6 +56,25 @@
     >
       Submit
     </button>
+    <div class="login-options">
+      <button type="button" class="btn btn-primary" (click)="fillForm('admin')">
+        Admin
+      </button>
+      <button
+        type="button"
+        class="btn btn-primary"
+        (click)="fillForm('instructor')"
+      >
+        Instructor
+      </button>
+      <button
+        type="button"
+        class="btn btn-primary"
+        (click)="fillForm('student')"
+      >
+        Student
+      </button>
+    </div>
   </form>
   <div class="main-img">
     <img src="/assets/img/mainimg3.png" alt="" />

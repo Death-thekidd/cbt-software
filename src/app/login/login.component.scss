@@ -139,3 +139,14 @@ input.ng-invalid.ng-touched {
 small {
   color: red;
 }
+
+.login-options {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+
+  .btn {
+    cursor: pointer;
+  }
+}
