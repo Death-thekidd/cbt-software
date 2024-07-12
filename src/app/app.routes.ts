@@ -5,6 +5,7 @@ import { SharedAdminInstructorComponent } from './shared-admin-instructor/shared
 import { StudentComponent } from './student/student.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { InstructorDashboardComponent } from './instructor-dashboard/instructor-dashboard.component';
+import { UsersComponent } from './users/users.component';
 
 export const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -15,6 +16,7 @@ export const routes: Routes = [
     children: [
       { path: 'admin-dashboard', component: AdminDashboardComponent },
       { path: 'instructor-dashboard', component: InstructorDashboardComponent },
+      { path: 'users', component: UsersComponent },
     ],
   },
   { path: 'student', component: StudentComponent, canActivate: [AuthGuard] },

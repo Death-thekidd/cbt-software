@@ -834,7 +834,7 @@
 
       <div class="shadow-bottom"></div>
       <ul class="list-unstyled menu-categories" id="accordionExample">
-        <li class="menu active">
+        <li class="menu">
           <a
             href="#dashboard"
             data-toggle="collapse"
@@ -881,10 +881,10 @@
             id="dashboard"
             data-parent="#accordionExample"
           >
-            <li>
+            <li routerLinkActive="active" ariaCurrentWhenActive="page">
               <a *ngIf="isAdmin" routerLink="/admin-dashboard"> Admin </a>
             </li>
-            <li class="active">
+            <li routerLinkActive="active" ariaCurrentWhenActive="page">
               <a *ngIf="isInstructor" routerLink="/instructor-dashboard">
                 Instructor
               </a>
@@ -1251,16 +1251,16 @@
             id="managetests"
             data-parent="#accordionExample"
           >
-            <li>
+            <li routerLinkActive="active" ariaCurrentWhenActive="page">
               <a routerLink=""> Tests </a>
             </li>
-            <li>
+            <li routerLinkActive="active" ariaCurrentWhenActive="page">
               <a routerLink=""> Exams </a>
             </li>
-            <li>
+            <li routerLinkActive="active" ariaCurrentWhenActive="page">
               <a routerLink=""> Test Types </a>
             </li>
-            <li>
+            <li routerLinkActive="active" ariaCurrentWhenActive="page">
               <a routerLink=""> Exam Types </a>
             </li>
           </ul>
@@ -1314,13 +1314,13 @@
             id="managelearning"
             data-parent="#accordionExample"
           >
-            <li>
+            <li routerLinkActive="active" ariaCurrentWhenActive="page">
               <a routerLink=""> Practic sets </a>
             </li>
-            <li>
+            <li routerLinkActive="active" ariaCurrentWhenActive="page">
               <a routerLink=""> Lessons </a>
             </li>
-            <li>
+            <li routerLinkActive="active" ariaCurrentWhenActive="page">
               <a routerLink=""> Videos </a>
             </li>
           </ul>
@@ -1394,16 +1394,16 @@
             id="questionbank"
             data-parent="#accordionExample"
           >
-            <li>
+            <li routerLinkActive="active" ariaCurrentWhenActive="page">
               <a routerLink=""> Questions </a>
             </li>
-            <li>
+            <li routerLinkActive="active" ariaCurrentWhenActive="page">
               <a routerLink=""> Import Questions </a>
             </li>
-            <li>
+            <li routerLinkActive="active" ariaCurrentWhenActive="page">
               <a routerLink=""> Comprehensions </a>
             </li>
-            <li>
+            <li routerLinkActive="active" ariaCurrentWhenActive="page">
               <a routerLink=""> Question Types </a>
             </li>
           </ul>
@@ -1525,10 +1525,10 @@
             id="manageusers"
             data-parent="#accordionExample"
           >
-            <li>
-              <a routerLink=""> Users </a>
+            <li routerLinkActive="active" ariaCurrentWhenActive="page">
+              <a routerLink="/users"> Users </a>
             </li>
-            <li>
+            <li routerLinkActive="active" ariaCurrentWhenActive="page">
               <a routerLink=""> Users Group </a>
             </li>
           </ul>
@@ -1583,13 +1583,13 @@
             id="managecategories"
             data-parent="#accordionExample"
           >
-            <li>
+            <li routerLinkActive="active" ariaCurrentWhenActive="page">
               <a routerLink=""> Categories </a>
             </li>
-            <li>
+            <li routerLinkActive="active" ariaCurrentWhenActive="page">
               <a routerLink=""> Sub Categories </a>
             </li>
-            <li>
+            <li routerLinkActive="active" ariaCurrentWhenActive="page">
               <a routerLink=""> Tags </a>
             </li>
           </ul>
@@ -1643,13 +1643,13 @@
             id="managesubjects"
             data-parent="#accordionExample"
           >
-            <li>
+            <li routerLinkActive="active" ariaCurrentWhenActive="page">
               <a routerLink=""> Sections </a>
             </li>
-            <li>
+            <li routerLinkActive="active" ariaCurrentWhenActive="page">
               <a routerLink=""> Skills </a>
             </li>
-            <li>
+            <li routerLinkActive="active" ariaCurrentWhenActive="page">
               <a routerLink=""> Topics </a>
             </li>
           </ul>
@@ -1662,6 +1662,36 @@
   <!--  BEGIN CONTENT AREA  -->
   <div id="content" class="main-content">
     <router-outlet></router-outlet>
+    <div class="footer-wrapper">
+      <div class="footer-section f-section-1">
+        <p class="">
+          Copyright © 2024
+          <a target="_blank" href="" rel="noopener">Axript</a>, All rights
+          reserved.
+        </p>
+      </div>
+      <div class="footer-section f-section-2">
+        <p class="">
+          Coded with
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-heart"
+          >
+            <path
+              d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+            ></path>
+          </svg>
+        </p>
+      </div>
+    </div>
   </div>
   <!--  END CONTENT AREA  -->
 </div>
