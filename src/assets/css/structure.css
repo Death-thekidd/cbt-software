@@ -97,7 +97,7 @@ code {
 }
 
 #content {
-  /* width: 50%; */
+  width: 50%;
   flex-grow: 8;
   margin-top: 80px;
   margin-bottom: 0;
