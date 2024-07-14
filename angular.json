@@ -26,7 +26,11 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/plugins/table/datatable/datatables.css",
+              "src/assets/plugins/table/datatable/custom_dt_miscellaneous.css",
+              "src/assets/css/forms/theme-checkbox-radio.css",
+              "src/assets/plugins/table/datatable/dt-global_style.css"
             ],
             "scripts": [
               "src/assets/js/libs/jquery-3.1.1.min.js",
@@ -36,7 +40,10 @@
               "src/assets/js/app.js",
               "src/assets/js/custom.js",
               "src/assets/plugins/apex/apexcharts.min.js",
-              "src/assets/js/dashboard/dash_2.js"
+              "src/assets/js/dashboard/dash_2.js",
+              "src/assets/plugins/table/datatable/datatables.js",
+              "src/assets/plugins/table/datatable/button-ext/dataTables.buttons.min.js",
+              "src/assets/plugins/table/datatable/custom_miscellaneous.js"
             ]
           },
           "configurations": {
